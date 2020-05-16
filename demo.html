@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Game</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCHSk0YXg_-IGidR1nZo2OS7FoCJqMZJc&libraries=places&callback=initMap"
+        async defer></script>
+</head>
+
+<body>
+
+    <div id="board">
+        <div class="sidebar">
+
+            <div class="header">
+                <span>Quiz Game</span>
+                <div class="timer">
+
+                    <label id="minutes">00</label>
+                    <label id="colon">:</label>
+                    <label id="seconds">00</label>
+                </div>
+            </div>
+            <div id=" quiz1">
+                <p id="caption1">Question 1:</p>
+                <div id="question1">
+                </div>
+                <div id="answer1">
+                    <div id="right">
+                        <p>Your answer is correct!</p>
+                    </div>
+                    <div id="wrong">
+                        <p>Your answer is incorrect!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz2">
+                <p id="caption2">Question 2:</p>
+                <div id="question2">
+                </div>
+                <div id="answer2">
+                    <div id="right">
+                        <p>Your answer is correct!</p>
+                    </div>
+                    <div id="wrong">
+                        <p>Your answer is incorrect!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz3">
+                <p id="caption3">Question 3:</p>
+                <div id="question3">
+                </div>
+                <div id="answer3">
+                    <div id="right">
+                        <p>Your answer is correct!</p>
+                    </div>
+                    <div id="wrong">
+                        <p>Your answer is incorrect!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz4">
+                <p id="caption4">Question 4:</p>
+                <div id="question4">
+                </div>
+                <div id="answer4">
+                    <div id="right">
+                        <p>Your answer is correct!</p>
+                    </div>
+                    <div id="wrong">
+                        <p>Your answer is incorrect!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="quiz5">
+                <p id="caption5">Question 5:</p>
+                <div id="question5">
+                </div>
+                <div id="answer5">
+                    <div id="right">
+                        <p>Your answer is correct!</p>
+                    </div>
+                    <div id="wrong">
+                        <p>Your answer is incorrect!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button" disabled>next</button>
+        </div>
+
+        <div id="modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('modal').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                    <h3>Congratulations!</h3>
+                    <p>Your answer is <span id="correctCnt"></span>&nbsp;&nbsp;Correct,&nbsp;&nbsp;<span
+                            id="incorrectCnt"></span>&nbsp;&nbsp;Incorrect!</p>
+                    <br />
+                    <p>Elapsed Time: &nbsp;&nbsp;<span id="min"></span>&nbsp;&nbsp;Mins&nbsp;&nbsp;<span
+                            id="sec"></span>&nbsp;&nbsp;Secs</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>
