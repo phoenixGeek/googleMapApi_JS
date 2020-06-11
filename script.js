@@ -90,14 +90,6 @@ function initMap() {
         });
     }
 
-
-
-
-
-
-
-
-
 }
 
 function initialize() {
